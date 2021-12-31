@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root{
+    --blue: #2a6ccf;
+    --grey: #4e4444;
+}
+
+*{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1rem;
+    font-family: 'Josefin Sans', Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--grey);
+    margin: 0;
+}
+
+#header{
+    background-color: var(--blue);
+    border-bottom: solid 2px white;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0;
+}
+
+#header h1{
+    font-family: Pushster, Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 0;   
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+#pageContent{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#profilePic{
+    height: 150px;
+    border: solid 5px var(--blue);
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;;
+}
+
+#mainDesc{
+    height: auto;
+    background-color: rgb(204, 182, 182);
+    margin-top: -50px;
+    border-top: solid 5px var(--blue);
+    border-bottom: solid 5px var(--blue);
+    overflow: auto;    
+}
+
+#mainDesc p{
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    color: var(--grey);
+    text-align: center;
+    font-size: 0.8em;
+}
+
+#mainDesc a{
+    color: var(--grey);
+}
+
+#mainDesc a:hover{
+    color: #ec6f00;
+}
+
+#links{
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+    padding: 0;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.linkContainer{
+    height: 50px;
+    width: 90%;
+    max-width: 300px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.linkContainer span{
+    color: white;
+}
+
+#LinkedIn{
+    background-color: #0a66c2;
+}
+
+#Git{
+    background-color: #24292f;
+}
+
+#Gmail{
+    background-color: #d93025;
+}
+
+#skillSection{
+    display: grid;
+    grid-gap: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+
+#skillSection li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.skillContainer{
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245, 50%);
+    overflow: auto;
+    max-width: 300px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skillContainer h3{
+    font-size: 0.8em;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+#skills{
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#skills li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#skills span{
+    font-size: 0.8em;
+}
+
+.dotYes{
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: rgb(24, 131, 21);
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.dotNo{
+    border-radius: 50%;
+    height: 5px;
+    width: 5px;
+    background-color: rgb(182, 31, 31);
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+#mainDesc h2{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 0.75em;
+}
+
+.catType{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 0.75em;
+    text-align: center;
+}
+
+#exp{
+    padding-left: 0;
+    margin-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-size: 0.75em;
+}
+
+#exp li:not(:last-child){
+    margin-bottom: 3px;
+}
+
+.first{
+    list-style-type: square;
+}
+
+.desc{   
+    list-style-type: none;
+    font-size: 0.8em;
+    color: var(--grey);
+    margin-bottom: 10px !important;
+}
+
+.other{
+    margin-left: 30px;
+}
+
+
+#footer{
+    background-color: var(--blue);
+    border-top: solid 2px white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#footer p{
+    height: 7px;;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 0.5em;
+}
+
+@media screen and (min-width: 275px){
+    .skillContainer h3{
+        font-size: 1em;
+        margin-left: 5px;
+        margin-top: 5px;
+    }
+
+    #skills span{
+        font-size: 1em;
+    }
+
+    #mainDesc h2{
+        font-size: 0.75em;
+    }
+
+    .catType{
+        font-size: 0.75em;
+        text-align: left;
+    }
+        
+    #exp{
+        font-size: 0.75em;
+    }
+}
+
+@media screen and (min-width: 500px){
+    #mainDesc h2{
+        font-size: 0.75em;
+    }
+
+    .catType{
+        font-size: 0.75em;
+        margin-left: 20px;
+    }
+        
+    #exp{
+        font-size: 0.75em;
+        margin-left: 40px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    #header h1{
+        padding-left: 10px;
+        justify-content: left;
+    }
+
+    #mainDesc p{
+        text-align: justify;
+        font-size: 1em;
+    }
+
+    #mainDesc ul{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #skillSection{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #mainDesc h2{
+        font-size: 1rem;
+    }
+
+    .catType{
+        font-size: 1rem;
+        margin-left: 40px;
+    }
+        
+    #exp{
+        font-size: 1rem;
+        margin-left: 80px;
+    }  
+
+}
