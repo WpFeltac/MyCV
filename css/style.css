@@ -172,7 +172,7 @@ body{
     width: 5px;
     background-color: rgb(24, 131, 21);
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 1px;
 }
 
 .dotNo{
@@ -181,7 +181,7 @@ body{
     width: 5px;
     background-color: rgb(129, 109, 109);
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 1px;
 }
 
 .catType{
@@ -324,11 +324,13 @@ body{
     .dotYes{
         height: 15px;
         width: 15px;
+        margin-top: 3px;
     }
 
     .dotNo{
         height: 15px;
         width: 15px;
+        margin-top: 3px;
     }
 
     .catType{
