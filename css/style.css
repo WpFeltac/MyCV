@@ -38,7 +38,6 @@ body{
 #pageContent{
     width: 100%;
     margin-top: 100px;
-    margin-bottom: 100px;
 }
 
 #profilePic{
@@ -52,10 +51,10 @@ body{
 
 #mainDesc{
     height: auto;
+    padding-bottom: 50px;
     background-color: rgb(204, 182, 182);
     margin-top: -50px;
     border-top: solid 5px var(--blue);
-    border-bottom: solid 5px var(--blue);
     overflow: auto;    
 }
 
@@ -140,8 +139,8 @@ body{
 
 .skillContainer h3{
     font-size: 1.5em;
-    margin-left: 5px;
-    margin-top: 5px;
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 #skills{
@@ -158,28 +157,31 @@ body{
     font-size: 1.5em;
 }
 
+#skills div{
+    display: flex;
+    justify-content: center;
+}
+
+#skills span:not(:last-child){
+    margin-right: 5px;
+}
+
 .dotYes{
     border-radius: 50%;
     height: 10px;
     width: 10px;
     background-color: rgb(24, 131, 21);
     display: inline-block;
-    margin-bottom: 3px;
+    margin-top: 5px;
 }
 
 .dotNo{
     border-radius: 50%;
     height: 10px;
     width: 10px;
-    background-color: rgb(182, 31, 31);
+    background-color: rgb(129, 109, 109);
     display: inline-block;
-    margin-bottom: 3px;
-}
-
-#mainDesc h2{
-    margin-top: 10px;
-    margin-left: 10px;
-    font-size: 0.75em;
+    margin-top: 5px;
 }
 
 .catType{
@@ -243,8 +245,6 @@ body{
 
     .skillContainer h3{
         font-size: 1em;
-        margin-left: 5px;
-        margin-top: 5px;
     }
 
     #skills span{
@@ -321,8 +321,14 @@ body{
         font-size: 1.5em;
     }
 
-    #mainDesc h2{
-        font-size: 1.5em;
+    .dotYes{
+        height: 15px;
+        width: 15px;
+    }
+
+    .dotNo{
+        height: 15px;
+        width: 15px;
     }
 
     .catType{
