@@ -168,8 +168,8 @@ body{
 
 .dotYes{
     border-radius: 50%;
-    height: 10px;
-    width: 10px;
+    height: 5px;
+    width: 5px;
     background-color: rgb(24, 131, 21);
     display: inline-block;
     margin-top: 5px;
@@ -177,8 +177,8 @@ body{
 
 .dotNo{
     border-radius: 50%;
-    height: 10px;
-    width: 10px;
+    height: 5px;
+    width: 5px;
     background-color: rgb(129, 109, 109);
     display: inline-block;
     margin-top: 5px;
